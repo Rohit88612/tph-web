@@ -24,8 +24,7 @@
   
   .top-buttons {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    bottom: 0;
     display: flex;
     gap: 10px;
   }
