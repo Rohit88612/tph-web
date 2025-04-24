@@ -24,6 +24,18 @@ body {
   flex-direction: column;
 }
 
+@font-face {
+  font-family: 'Special Gothic Expanded One';
+  src: url('fonts/SpecialGothicExpandedOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card-title {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+}
+
+
 .top-buttons {
   margin-top: 20px; /* Add space from the sub-heading */
   padding: 15px 30px;
