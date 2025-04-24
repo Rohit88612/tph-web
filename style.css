@@ -104,7 +104,7 @@ body {
 .cards {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: column; /* Stacks cards vertically */
   justify-content: center;
   margin-top: 50px;
 }
