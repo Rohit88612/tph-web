@@ -17,7 +17,7 @@ body {
   background-image: url('images/image2.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   color: #fff;
   font-family: 'Akira Expanded', sans-serif; /* Use the Akira Expanded font */
   margin: 0;
