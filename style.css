@@ -173,7 +173,6 @@ body {
 .card-btn {
   padding: 12px 20px;
   border-radius: 6px;
-  font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
   text-align: center;
