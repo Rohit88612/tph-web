@@ -17,7 +17,8 @@ body {
   background-image: url('images/image2.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps it locked while scrolling */
   color: #fff;
   font-family: 'Akira Expanded', sans-serif; /* Use the Akira Expanded font */
   margin: 0;
@@ -27,6 +28,12 @@ body {
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
+}
+
+body, html {
+  height: 130%;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -52,7 +59,6 @@ body {
 .card-btn {
   font-family: 'CalSans', sans-serif;
   font-size: 25px;
-  text-shadow: 1px 1px 2px black;
 }
 
 .btn {
@@ -75,7 +81,7 @@ body {
 
 .card-text {
   font-family: 'Special Gothic Expanded One', sans-serif;
-  color: #ffffff;
+  color: #ccc;
   margin-bottom: 20px;
 }
 
@@ -116,17 +122,18 @@ body {
   background-color: #111;
   padding: 30px;
   border-radius: 12px;
-  text-shadow: 1px 1px 2px black; /* subtle black shadow */
+   /*overflow: hidden; /* Prevents overflow if content is larger than the card */
   width: 800px; /* Adjust the width to make it more rectangular */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
   transition: transform 0.3s ease; /* Smooth transition for scale effect */
+  margin-bottom: 40px; /* Add spacing between all cards */
 }
 
 /* Underglow for the first card (FiveM) */
@@ -311,6 +318,26 @@ body {
   z-index: 2;
   background: transparent;
 }
+
+.card.card-discord {
+  box-shadow: 0 0 15px #5865F2; /* Discord blue underglow */
+  background-image: url('images/discord-bg.jpg'); /* Add a background if you'd like */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card.card-discord::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 5px;
+  background: linear-gradient(90deg, #5865F2, transparent);
+  border-radius: 0 0 12px 12px;
+}
+
 @media (max-width: 480px) {
   /* For very small screens (phones in portrait mode) */
   .card {
