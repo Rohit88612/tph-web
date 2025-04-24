@@ -213,9 +213,6 @@ body, html {
 }
 
 /* Discord button should match the Discord logo color */
-.card .card-btn.discord-btn {
-  background-color: #5865F2; /* Discord logo color */
-}
 
 
 @keyframes glowOnce {
@@ -310,6 +307,10 @@ body, html {
   background-image: url('images/mc.gif');
 }
 
+.card:nth-child(3) .gif-bg {
+  background-image: url('images/dc.gif');
+}
+
 /* Make sure the content shows on top of GIF */
 .card-title,
 .card-text,
@@ -321,7 +322,7 @@ body, html {
 
 .card.card-discord {
   box-shadow: 0 0 15px #5865F2; /* Discord blue underglow */
-  background-image: url('images/discord-bg.jpg'); /* Add a background if you'd like */
+  background-image: url('images/.gif'); /* Add a background if you'd like */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -334,7 +335,6 @@ body, html {
   left: 0;
   width: 50%;
   height: 5px;
-  background: linear-gradient(90deg, #5865F2, transparent);
   border-radius: 0 0 12px 12px;
 }
 
