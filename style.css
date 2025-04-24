@@ -55,7 +55,6 @@ body {
 /* Subtitle (sub-heading) uses Roboto */
 .sub-heading {
   font-family: 'Special Gothic Expanded One', sans-serif;
-  font-weight: bold;       /* Make it bold */
   font-style: italic;      /* Make it italic */
   font-size: 1.5rem;
   margin-bottom: 40px;
@@ -64,8 +63,6 @@ body {
 
 .card-text {
   font-family: 'Special Gothic Expanded One', sans-serif;
-  font-weight: bold;       /* Make it bold */
-  font-style: italic;      /* Make it italic */
   color: #ccc;
   margin-bottom: 20px;
 }
