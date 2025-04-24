@@ -113,7 +113,7 @@ body {
   background-color: #111;
   padding: 30px;
   border-radius: 12px;
-  overflow: hidden; /* Prevents overflow if content is larger than the card */
+   /*overflow: hidden; /* Prevents overflow if content is larger than the card */
   width: 500px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   display: flex;
@@ -122,7 +122,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 /* Underglow for the first card (FiveM) */
