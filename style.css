@@ -104,7 +104,7 @@ body {
 .cards {
   display: flex;
   gap: 30px;
-  width: 600px; /* Adjust the width to make it more rectangular */
+  width: 800px; /* Adjust the width to make it more rectangular */
   min-height: 600px; /* Adjust as needed */
   flex-direction: column; /* Stacks cards vertically */
   justify-content: center;
@@ -116,7 +116,7 @@ body {
   padding: 30px;
   border-radius: 12px;
    /*overflow: hidden; /* Prevents overflow if content is larger than the card */
-  width: 600px; /* Adjust the width to make it more rectangular */
+  width: 800px; /* Adjust the width to make it more rectangular */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
