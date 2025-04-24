@@ -53,6 +53,12 @@ body {
   color: #aaa;
 }
 
+.card-text {
+  font-family: 'Roboto', sans-serif;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
 .btn-discord {
   background-color: #5865F2; /* Discord logo color */
 }
