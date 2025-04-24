@@ -104,6 +104,7 @@ body {
 .cards {
   display: flex;
   gap: 30px;
+  min-height: 600px; /* Adjust as needed */
   flex-direction: column; /* Stacks cards vertically */
   justify-content: center;
   margin-top: 50px;
