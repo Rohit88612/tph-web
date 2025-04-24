@@ -31,11 +31,6 @@ body {
   font-style: normal;
 }
 
-.card-title {
-  font-family: 'Special Gothic Expanded One', sans-serif;
-}
-
-
 .top-buttons {
   margin-top: 20px; /* Add space from the sub-heading */
   padding: 15px 30px;
@@ -59,7 +54,7 @@ body {
 
 /* Subtitle (sub-heading) uses Roboto */
 .sub-heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Special Gothic Expanded One', sans-serif;
   font-weight: bold;       /* Make it bold */
   font-style: italic;      /* Make it italic */
   font-size: 1.5rem;
@@ -68,7 +63,7 @@ body {
 }
 
 .card-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Special Gothic Expanded One', sans-serif;
   font-weight: bold;       /* Make it bold */
   font-style: italic;      /* Make it italic */
   color: #ccc;
