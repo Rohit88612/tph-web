@@ -91,7 +91,7 @@ body {
   margin-bottom: 10px;
   text-align: center;
   color: #fff; /* White color for text */
-  text-shadow: 0 4px 8px rgba(33, 138, 128), 0 0 25px rgba(33, 138, 128); /* Orange underglow effect */
+  text-shadow: 0 4px 8px #218a80, 0 0 25px rgba(33, 138, 128); /* Orange underglow effect */
 }
 
 .sub-heading {
@@ -125,6 +125,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
+  transition: transform 0.3s ease; /* Smooth transition for scale effect */
 }
 
 /* Underglow for the first card (FiveM) */
@@ -186,21 +187,21 @@ body {
 }
 
 /* Copy IP button for FiveM (Orange) */
-.card:first-child .card-btn:nth-child(1) {
+/*.card:first-child .card-btn:nth-child(1) {
   background-color: #ff8c00e1; /* Orange */
-}
+/*}*/
 
 .card:first-child .card-btn:nth-child(1):hover {
-  background-color: rgb(33, 138, 128); /* Darker orange for hover */
+  animation: glowOnce 1s ease;
 }
 
 /* Copy IP button for Minecraft (Green) */
-.card:nth-child(2) .card-btn:nth-child(1) {
+/*.card:nth-child(2) .card-btn:nth-child(1) {
   background-color: #4CAF50; /* Minecraft green */
-}
+/*}*/
 
 .card:nth-child(2) .card-btn:nth-child(1):hover {
-  background-color: #218a80; /* Darker green for hover */
+  animation: glowOnce 1s ease;
 }
 
 /* Discord button should match the Discord logo color */
@@ -208,12 +209,25 @@ body {
   background-color: #5865F2; /* Discord logo color */
 }
 
+
+@keyframes glowOnce {
+  0% {
+    box-shadow: 0 0 0px #218a80;
+  }
+  50% {
+    box-shadow: 0 0 15px #01eeff;
+  }
+  100% {
+    box-shadow: 0 0 0px #218a80;
+  }
+}
+
 .card .card-btn.discord-btn:hover {
-  background-color: #218a80; /* Darker Discord logo color */
+  animation: glowOnce 1s ease;
 }
 
 .card-btn:hover {
-  background-color: #333;
+  animation: glowOnce 1s ease;
 }
 
 /* Mobile Responsiveness */
@@ -226,6 +240,76 @@ body {
   }
 }
 
+/* Card pop-up effect on hover */
+.card:hover {
+  transform: scale(1.05); /* Slightly increases the size */
+  z-index: 2; /* Brings the card to the front */
+}
+
+/* Initially hide the GIF */
+.card .card-gif {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the GIF */
+  width: 100%; /* Adjust the size of the GIF */
+  height: 100%;
+  object-fit: cover; /* Ensures the GIF fills the card space */
+  border-radius: 12px;
+}
+
+/* When hovered, display the GIF */
+.card:hover .card-gif {
+  display: block; /* Show the GIF */
+  animation: playGif 1s steps(1) infinite; /* Play the GIF */
+}
+
+/* Keyframe for playing the GIF */
+@keyframes playGif {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* GIF background layer */
+.gif-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+/* Hover effect to reveal the GIF */
+.card:hover .gif-bg {
+  opacity: 1;
+}
+
+.card:first-child .gif-bg {
+  background-image: url('images/fivem.gif');
+}
+
+.card:nth-child(2) .gif-bg {
+  background-image: url('images/mc.gif');
+}
+
+/* Make sure the content shows on top of GIF */
+.card-title,
+.card-text,
+.card-buttons {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
 @media (max-width: 480px) {
   /* For very small screens (phones in portrait mode) */
   .card {
