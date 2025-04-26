@@ -133,6 +133,13 @@ body, html {
   will-change: transform; /* <--- super important for smoother scaling */
 }
 
+/* Card pop-up effect on hover */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2); /* Add bigger glow on hover */
+  z-index: 10;
+}
+
 .card:first-child {
   box-shadow: 0 0 15px rgb(255, 166, 0);
 }
