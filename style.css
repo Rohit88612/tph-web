@@ -334,7 +334,7 @@ body, html {
   bottom: -5px;
   left: 0;
   width: 100%;
-  height: 5px;
+ min-height: 300px;
   border-radius: 0 0 12px 12px;
 }
 
