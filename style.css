@@ -1,127 +1,137 @@
-/* Fonts */
+/* Define the custom font */
 @font-face {
   font-family: 'Akira Expanded';
   src: url('fonts/Akira Expanded Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
 @font-face {
   font-family: 'CalSans';
   src: url('fonts/CalSans-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Special Gothic Expanded One';
   src: url('fonts/SpecialGothicExpandedOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 
-/* Base */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
-  font-family: 'Akira Expanded', sans-serif;
-  color: #fff;
-  background-image: url('images/image2.jpg'), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+body {
+  background-image: url('images/image2.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
-}
-
-/* Headings */
-.main-heading {
-  font-size: 6rem;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  text-shadow: 0 4px 8px #218a80, 0 0 25px rgba(33,138,128);
-}
-.sub-heading {
-  font-family: 'Special Gothic Expanded One', sans-serif;
-  font-style: italic;
-  font-size: 2rem;
-  text-align: center;
-  color: #aaa;
-  margin-bottom: 40px;
-}
-
-/* Cards Container */
-.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  max-width: 1000px;
-  gap: 40px;
-}
-
-/* Card */
-.card {
-  background-color: #111;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.1);
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-.card:hover {
-  transform: scale(1.05);
-  z-index: 2;
-}
-
-/* Card Titles & Text */
-.card-title {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-.card-text {
-  font-family: 'Special Gothic Expanded One', sans-serif;
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-}
-
-/* Card Buttons */
-.card-buttons {
+  color: #fff;
+  font-family: 'Akira Expanded', sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
-.card-btn {
-  font-family: 'CalSans', sans-serif;
-  font-size: 1.5rem;
-  padding: 12px 25px;
+
+body, html {
+  height: 130%;
+  margin: 0;
+  padding: 0;
+}
+
+.top-buttons {
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #5865F2;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background-color: #218a80;
-  color: white;
-  transition: background 0.3s, transform 0.3s;
-}
-.card-btn:hover {
-  background-color: #01eeff;
-  animation: glowOnce 1s ease;
+  transition: background 0.3s ease;
+  text-align: center;
 }
 
-/* Button Special (Discord) */
+.btn,
+.card-btn {
+  font-family: 'CalSans', sans-serif;
+  font-size: 25px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Subtitle (sub-heading) uses Roboto */
+.sub-heading {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #aaa;
+  text-align: center;
+}
+
+.card-text {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
 .btn-discord {
   background-color: #5865F2;
 }
+
 .btn-discord:hover {
-  background-color: #4752c4;
+  background-color: #5865F2;
 }
 
-/* Special Underglow for Each Card */
-.card:first-child {
-  box-shadow: 0 0 20px rgb(255,166,0);
+.main-heading {
+  font-size: 5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 8px #218a80, 0 0 25px rgba(33, 138, 128);
 }
+
+.cards {
+  display: flex;
+  gap: 30px;
+  width: 800px;
+  min-height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 12px;
+  width: 800px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+}
+
+/* Underglow for the first card (FiveM) */
+.card:first-child {
+  box-shadow: 0 0 15px rgb(255, 166, 0);
+}
+
 .card:first-child::after {
   content: "";
   position: absolute;
@@ -129,12 +139,15 @@ html, body {
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg, rgb(255,166,0), rgba(255,165,0,0));
+  background: linear-gradient(90deg, rgb(255, 166, 0), rgba(255, 165, 0, 0));
   border-radius: 0 0 12px 12px;
 }
+
+/* Underglow for the second card (Minecraft) */
 .card:nth-child(2) {
-  box-shadow: 0 0 20px rgb(0,255,0);
+  box-shadow: 0 0 15px rgb(0, 255, 0);
 }
+
 .card:nth-child(2)::after {
   content: "";
   position: absolute;
@@ -142,29 +155,104 @@ html, body {
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg, rgb(0,255,0), rgba(0,255,0,0));
+  background: linear-gradient(90deg, rgb(0, 255, 0), rgba(0, 255, 0, 0));
   border-radius: 0 0 12px 12px;
 }
-.card:nth-child(3) {
-  box-shadow: 0 0 20px #5865F2;
+
+.card-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-/* GIF Backgrounds */
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-btn {
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Glow */
+.card:first-child .card-btn:nth-child(1):hover,
+.card:nth-child(2) .card-btn:nth-child(1):hover,
+.card .card-btn.discord-btn:hover,
+.card-btn:hover {
+  animation: glowOnce 1s ease;
+}
+
+/* Glow Animation */
+@keyframes glowOnce {
+  0% {
+    box-shadow: 0 0 0px #218a80;
+  }
+  50% {
+    box-shadow: 0 0 15px #01eeff;
+  }
+  100% {
+    box-shadow: 0 0 0px #218a80;
+  }
+}
+
+/* Card pop-up effect on hover */
+.card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+/* Initially hide the GIF */
+.card .card-gif {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Show GIF on hover */
+.card:hover .card-gif {
+  display: block;
+  animation: playGif 1s steps(1) infinite;
+}
+
+/* Keyframes for GIF */
+@keyframes playGif {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 100%; }
+}
+
+/* GIF background layer */
 .gif-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 300px; /* Keeps cards properly sized even if GIF missing */
   background-size: cover;
   background-position: center;
+  background-color: rgba(0, 0, 0, 0.2); /* fallback color */
   opacity: 0;
-  z-index: 0;
   transition: opacity 0.3s ease;
+  z-index: 0;
 }
+
+/* Reveal GIF on hover */
 .card:hover .gif-bg {
   opacity: 1;
 }
+
+/* Set different GIFs */
 .card:first-child .gif-bg {
   background-image: url('images/fivem.gif');
 }
@@ -175,45 +263,44 @@ html, body {
   background-image: url('images/dc.gif');
 }
 
-/* Content Above GIFs */
+/* Bring content above GIF */
 .card-title,
 .card-text,
 .card-buttons {
   position: relative;
   z-index: 2;
+  background: transparent;
 }
 
-/* Button Glow Animation */
-@keyframes glowOnce {
-  0% { box-shadow: 0 0 0px #218a80; }
-  50% { box-shadow: 0 0 15px #01eeff; }
-  100% { box-shadow: 0 0 0px #218a80; }
+/* Discord Card special style */
+.card.card-discord {
+  box-shadow: 0 0 15px #5865F2;
+  position: relative;
 }
 
-/* Responsive */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .main-heading {
-    font-size: 4rem;
-  }
-  .sub-heading {
-    font-size: 1.5rem;
-  }
-  .card-title {
-    font-size: 2rem;
-  }
-  .card-text {
-    font-size: 1.1rem;
-  }
-  .card-btn {
-    font-size: 1.2rem;
-    padding: 10px 20px;
+  #join-discord-footer {
+    width: 90%;
+    padding: 12px 20px;
+    font-size: 16px;
   }
 }
+
 @media (max-width: 480px) {
-  .main-heading {
+  .card {
+    width: 95%;
+  }
+
+  h1.main-heading {
     font-size: 3rem;
   }
-  .sub-heading {
-    font-size: 1.2rem;
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
   }
 }
