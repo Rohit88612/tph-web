@@ -1,5 +1,6 @@
 body {
-  background-color: #1e1e1e; /* Dark solid background */
+  background: url("https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center center fixed;
+  background-size: cover;
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
