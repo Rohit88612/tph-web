@@ -1,5 +1,5 @@
 body {
-  background: url("https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center center fixed;
+  background-image: url('image/tempimg.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   font-family: Arial, sans-serif;
