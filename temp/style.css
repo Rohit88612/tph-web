@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-image: url('tempimg.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url('test.gif'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   background-color: #f5f5f5;
