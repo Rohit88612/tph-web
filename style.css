@@ -155,11 +155,11 @@ body, html {
   border-radius: 0 0 12px 12px;
 }
 
-.card:nth-child(2) {
+.card:first-child {
   box-shadow: 0 0 15px rgb(0, 255, 0);
 }
 
-.card:nth-child(2)::after {
+.card:first-child::after {
   content: "";
   position: absolute;
   bottom: -5px;
