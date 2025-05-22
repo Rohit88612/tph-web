@@ -53,15 +53,22 @@
     });
 </script>
 
-    <div class="card">
-  <nav class="navbar">
+ <!-- Dropdown + Text Area -->
     <div class="dropdown-container">
-      <button class="dropdown-toggle" id="dropdownToggle">Menu ▾</button>
-      <ul class="dropdown-menu" id="dropdownMenu">
-        <li><a href="#">More Info</a></li>
-      </ul>
+      <label for="reason" style="margin-top:10px;">Choose a reason:</label>
+      <select id="reason" class="dropdown-select">
+        <option value="" disabled selected>Select an option</option>
+        <option value="bug">Bug Report</option>
+        <option value="feature">Feature Request</option>
+        <option value="other">Other</option>
+      </select>
     </div>
-  </nav>
+
+    <div class="text-area-container">
+      <label for="details">Tell us more:</label>
+      <textarea id="details" class="dropdown-textarea" placeholder="Write your message here..."></textarea>
+    </div>
+  </div>
 </div>
 
 
