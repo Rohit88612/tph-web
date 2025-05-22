@@ -308,6 +308,7 @@ body, html {
 }
 
 /* === Dropdown Menu (Card-Friendly) === */
+/* Dropdown button inside card */
 .dropdown-toggle {
   background-color: #5865F2;
   color: white;
@@ -319,12 +320,14 @@ body, html {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  width: 100%;
 }
 
 .dropdown-toggle:hover {
   background-color: #4752c4;
 }
 
+/* Dropdown text visibility */
 .dropdown-text {
   margin-top: 10px;
   background-color: #1a1a1a;
@@ -334,4 +337,10 @@ body, html {
   font-size: 14px;
   color: #ddd;
   border: 1px solid #333;
+}
+
+/* Ensures the dropdown text stays hidden until toggled */
+.dropdown-container {
+  width: 100%;
+  margin-top: 15px;
 }
