@@ -246,9 +246,8 @@ body, html {
   opacity: 1;
 }
 
-.card:first-child .gif-bg { background-image: url('images/fivem.gif'); }
-.card:nth-child(2) .gif-bg { background-image: url('images/mc.gif'); }
-.card:nth-child(3) .gif-bg { background-image: url('images/dc.gif'); }
+.card:first-child .gif-bg { background-image: url('images/mc.gif'); }
+.card:nth-child(2) .gif-bg { background-image: url('images/dc.gif'); }
 
 .card-title,
 .card-text,
