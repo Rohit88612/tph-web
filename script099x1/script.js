@@ -17,7 +17,7 @@ function copyIP(serverType) {
   });
 }
 
-// Function to toggle the visibility of the pre-written text in dropdown
+// Function to toggle the visibility of the pre-written text in dropdown inside the card
 function toggleDropdownText() {
   const text = document.getElementById("dropdown-text");
   if (text) {
