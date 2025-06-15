@@ -6,7 +6,7 @@ function copyIP(serverType) {
   if (serverType === "fivem") {
     serverIP = "coming soon buddy have some patience"; // Change this to your FiveM IP
   } else if (serverType === "minecraft") {
-    serverIP = "bhaichara.tphub.in:25535"; // Change this to your Minecraft IP
+    serverIP = "bhaichara.tphub.in:25475"; // Change this to your Minecraft IP
   }
 
   // Copy to clipboard and alert the user
