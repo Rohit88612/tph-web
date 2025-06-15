@@ -26,7 +26,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: #fff;
+  color: #ffffff;
   font-family: 'Akira Expanded', sans-serif;
   margin: 0;
   padding: 0;
@@ -155,11 +155,11 @@ body, html {
   border-radius: 0 0 12px 12px;
 }
 
-.card:first-child {
+.card:nth-child(2) {
   box-shadow: 0 0 15px rgb(0, 255, 0);
 }
 
-.card:first-child::after {
+.card:nth-child(2)::after {
   content: "";
   position: absolute;
   bottom: -5px;
