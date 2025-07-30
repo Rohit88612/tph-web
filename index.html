@@ -42,7 +42,7 @@
     .then(data => {
       const statusEl = document.getElementById("mc-players");
       if (data.online) {
-        statusEl.textContent = `${data.players.online} players online`;
+        statusEl.textContent = `${data.players.online} player(s) online`;
       } else {
         statusEl.textContent = "Server is offline";
         statusEl.classList.remove("text-green-500");
